@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  list-style: none; /*La propriété list-style est une propriété raccourcie qui permet de définir list-style-type, list-style-image et list-style-position.*/
+
+  font-family: "Oswald", sans-serif; /*La propriété font-family permet de définir une liste, ordonnée par priorité, de polices à utiliser pour mettre en forme le texte de l'élément ciblé.*/
+}
+body {
+  height: 100vh;
+  position: relative; /*La propriété position définit la façon dont un élément est positionné dans un document. Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné.*/
+  /*Un élément positionné de façon relative est un élément dont la propriété de position calculée est relative. Dans ce cas, les propriétés top ou bottom indiquent le décalage vertical à appliquer et left ou right indiquent le décalage horizontal.*/
+  display: flex; /*La propriété display définit le type d'affichage utilisée pour le rendu d'un élément (de bloc ou en ligne) et la disposition utilisée pour ses éléments fils : grille ou boîtes flexibles.*/
+  align-items: center;
+  justify-content: center;
+  background: url("./pexels-anni-roenkae-2723329\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  height: 510px; /*La propriété width permet de définir la hauteur de la boîte du contenu d'un élément */
+  width: 280px; /* La propriété height définit la largeur de la boîte de contenu d'un élément*/
+  background: rgba(86, 86, 136, 0.712); /* fond d'écran */
+  backdrop-filter: blur(5px); /* effet du fond d'écran */
+  border-radius: 15px; /* arrondit les coins */
+}
+.round {
+  width: 100px; /*calibre la largeur de la "fenetre photo"*/
+  height: 100px; /*calibre la hauteur de la "fenetre photo"*/
+}
+.card .content {
+  display: flex; /* type d'affichage intérieur qui définit l'organisation des éléments enfants.*/
+  flex-direction: column; /*la propriété flex-direction définit la façon dont les éléments flexibles sont placés dans un conteneur flexible : elle définit l'axe principal et la direction des éléments */
+  justify-content: center; /*La propriété CSS justify-content indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible ou selon l'axe en ligne lorsque le conteneur est une grille.*/
+  align-items: center; /*La propriété CSS align-items définit la valeur de align-self sur l'ensemble des éléments-fils directs.*/
+  height: 300px;
+}
+
+.card .content .picture img {
+  /*contenant de l'image de profile */
+  border-radius: 50px;
+}
+.content li {
+  padding-right: 10px;
+  padding-left: 1px;
+  padding-top: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.content ul {
+  padding-top: 12px;
+}
+.li1 {
+  /*La propriété CSS border est une propriété raccourcie qui permet de définir les propriétés liées à la bordure. border peut être utilisée pour définir les valeurs de border-width, border-style et border-color.*/
+
+  display: inline-block;
+
+  margin: 0;
+  border-radius: 50px;
+}
+.li2 {
+  /* Paramètre de la bordure -largeur du trait en px -type de trait  - couleur du trait*/
+  display: inline-block;
+
+  margin: 0;
+  border-radius: 50px;
+}
+.li3 {
+  display: inline-block;
+
+  margin: 0;
+  border-radius: 50px;
+}
+
+.li4 {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  width: 85px;
+  padding: 4px;
+  background: #6614b3;
+  border-radius: 15px;
+  margin-top: 0px;
+}
+
+.li5 {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  padding: 5px;
+  background: #000000;
+  width: 100px;
+  border-radius: 15px;
+}
+.li6 {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  padding: 5px;
+  background: #f5f5f5;
+  width: 90px;
+  border-radius: 15px;
+}
+
+.liens p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  color: #e6cf09;
+}
+
+.notions {
+  color: #e6cf09;
+}
+
+.form ul {
+  padding-left: 35px;
+}
